@@ -1,0 +1,200 @@
+* {
+  font-family: 'Heebo', sans-serif;
+}
+
+/* Estilo del header */
+.header {
+  font-family: 'Heebo', sans-serif;
+  height: 100px;
+  background-color: white;
+  padding: 1px 0;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h5 {
+  font-weight: normal;
+}
+
+/* Estilos de menu */
+.barra {
+  display: flex;
+  position: absolute;
+}
+
+nav ul {
+  list-style: none;
+  margin-top: 80px;
+  position: relative;
+}
+
+nav li a {
+  color: deeppink;
+  display: block;
+  text-decoration: none;
+  padding: .5em 2em;
+}
+
+/* Pasar por arriba pntero del mouse */
+nav li a:hover {
+  background: #fdb1f3;
+  color: deeppink;
+  border-radius: 10px;  /* Esquinas redondeadas */
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Estilo de logo */
+.logo {
+  display: flex;
+  width: 100px;
+  height: 100px;
+}
+
+.clsForm {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Mapa */
+.mapa {
+  display: flex;
+  width: 300px;
+  height: 300px;
+  margin: 20px 20px;
+}
+
+/* Estilo del Contenido */
+.contenido {
+  display: flex;
+  height: 400px;
+  justify-content: flex-end;
+  font-family: 'Heebo', sans-serif;
+  background-color:#fdd5f7;
+  margin-top: 20px;
+}
+
+
+.contenidoArticulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-family: 'Heebo', sans-serif;
+  margin-top: 20px;
+}
+
+/* Estilo del header */
+.item {
+  display: flex;
+  margin: 20px 20px;
+  height: 35rem;
+}
+
+/* ID - No se usan para estilos*/
+.footer {
+  font-family: 'Heebo', sans-serif;
+  font-size: 16px;
+  letter-spacing: 3.4px;
+  word-spacing: 6px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+  background-color:white;
+}
+
+.flip-container {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin:10px;
+}
+
+.card {
+  position: relative;
+  display:inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.8s cubic-bezier(0.75, 0, 0.85, 1);
+}
+
+.card h3, card p {
+  display:block; 
+} 
+
+.card p, .card button { 
+  color:#FFF; 
+}
+
+/* GIRA HORIZONTAL */
+.flip-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+
+/* GIRA VERTICAL 
+.flip-container:hover .card {
+  transform: rotateX(180deg);
+}
+*/
+
+.frente, .dorso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.frente {
+  background-color: #dd5599;
+  color: #fff;
+  display: flex;
+  border-radius: 10px;
+}
+
+.dorso {
+  background-color: #6ed3ab;
+  color: #faebd7;
+  /*transform: rotateX(180deg);*/
+  transform: rotateY(180deg);
+  text-align:center;
+  border-radius: 10px;
+}
+
+.dorso p {
+  font-size:0.65em;
+}
+
+.dorso button { 
+  display:block; 
+  width:60%; 
+  margin:2rem auto 0; 
+  border:2px solid #fff;
+  background:transparent;
+  padding:1em;
+  text-transform:uppercase;
+}
+
+.dorso button:hover {
+  color:#5f127c;
+  border-color:#5f127c;
+  font-weight:bold;
+}
+
+.video {
+  margin: 10px;
+}

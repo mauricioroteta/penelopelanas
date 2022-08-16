@@ -1,0 +1,367 @@
+* {
+  font-family: 'Heebo', sans-serif;
+  box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+}
+
+html {
+  height: 100%;
+}
+
+h3 {
+  font-weight: bold;
+}
+
+h5 {
+  font-weight: normal;
+}
+
+body {
+  font-size: 1.2rem;
+  min-height: 100%;
+}
+
+/* Contenedor Principal */
+.grid-container {
+  max-width: 1400px;
+  width: 90%;
+  margin: auto;
+  border-radius: 4px;
+  text-align: left;
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+/* Logo */
+.anchor-logo{
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 780px) {
+  .anchor-logo{
+    display: inline-block;
+    width: 100%;
+    text-align: left;
+  }
+}
+
+.logo {
+  grid-area: header;
+  width: 100px;
+  height: 100px;
+}
+
+
+/*     Barra de navegacion       */
+.navbar {
+  grid-area: navbar;
+  font-size: medium;
+  padding: 0px;
+  margin: 0px;
+}
+
+nav li a {
+  color: deeppink;
+  display: block;
+  text-decoration: none;
+  padding: .5em 2em;
+  transition: transform 1s;
+}
+
+nav li a:hover { /* Pasar por arriba pntero del mouse */
+  font-weight: bolder;
+  transform: scale(1.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+  position: relative;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+/*     FIN Barra de navegacion       */
+
+.main {
+  grid-area: main;
+  font-family: 'Heebo', sans-serif;
+  gap: 10px;
+  margin: 10px;
+}
+
+.footer {
+  grid-area: footer;
+}
+
+.grid-container {
+  display: grid;
+  gap: 10px;
+  grid-template:
+    "header" 
+    "navbar" 
+    "main" 
+    "footer";
+}
+
+@media (min-width: 580px) {
+  .grid-container {
+    grid-template:
+      "header  navbar  navbar"
+      "main    main" 
+      "footer  footer" 20px;
+  }
+}
+
+@media (min-width: 780px) {
+  .grid-container {
+    grid-template:
+      "header navbar navbar" 
+      "main main main" 
+      "footer  footer footer" 20px;
+  }
+  .navbar ul {
+    flex-direction: row;
+    height: 100%;
+  }
+}
+
+.slide {
+  grid-area: slide;
+  font-family: 'Heebo', sans-serif;
+  gap: 10px;
+  margin: 10px;
+}
+
+/* Estilo del Contenido */
+.contenido {
+  display: grid;
+  font-family: 'Heebo', sans-serif;
+  gap: 10px;
+  margin: 10px;
+  grid-template:
+    /*"slide"    320px  Oculto slide en celulares*/
+    "Nosotros"
+    "video";
+  text-align: center;
+}
+
+.nosotros {
+  grid-area: nosotros;
+}
+
+.video {
+  grid-area: video;
+  text-align: center;
+}
+
+/*      Grid contenido index      */
+.contenido {
+  grid-template:
+    "slide"
+    "nosotros"
+    "video";
+  font-size: small;
+}
+
+@media (min-width: 580px) {
+  .contenido {
+    grid-template:
+      "slide"
+      "nosotros"
+      "video";
+    font-size: large;
+  }
+}
+
+@media (min-width: 780px) {
+  .contenido {
+    grid-template:
+      "slide slide"
+      "nosotros  video";
+  }
+}
+
+/*      FIN Grid contenido index      */
+
+.contenidoArticulos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Estilo del header */
+.item {
+  display: flex;
+  margin: 20px 20px;
+  height: 35rem;
+}
+
+/* ID - No se usan para estilos*/
+.footer {
+  font-size: 16px;
+  letter-spacing: 3.4px;
+  word-spacing: 6px;
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+  background-color: white;
+}
+
+/* ------------------ TARJETAS GIRATORIAS ------------------ */
+.flip-container {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 10px;
+}
+
+.card {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transform-style: preserve-3d;
+  transition: transform 0.4s cubic-bezier(0.75, 0, 0.85, 1);
+}
+
+.card h3,
+card p {
+  display: block;
+}
+
+.card p,
+.card button {
+  color: #FFF;
+}
+
+/* GIRA HORIZONTAL */
+.flip-container:hover .card {
+  transform: rotateY(180deg);
+}
+
+.frente,
+.dorso {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  align-items: center;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.frente {
+  display: flex;
+  background-color: #dd5599;
+  color: #fff;
+  border-radius: 10px;
+}
+
+.dorso {
+  background-color: #dd5599;
+  color: #faebd7;
+  /*transform: rotateX(180deg);*/
+  transform: rotateY(180deg);
+  text-align: center;
+  border-radius: 10px;
+}
+
+.dorso p {
+  font-size: 0.65em;
+}
+
+.dorso button {
+  display: block;
+  width: 60%;
+  margin: 2rem auto 0;
+  border: 2px solid #fff;
+  background: transparent;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+.dorso button:hover {
+  color: #ffffff;
+  border-color: #ffffff;
+  font-weight: bold;
+}
+
+/* ------------------ FIN TARJETAS GIRATORIAS ------------------ */
+
+/*      Estilo Botón WhatsApp      */
+
+img.btn-whatsapp {
+  display: block !important;
+  position: fixed;
+  z-index: 9999999;
+  bottom: 20px;
+  right: 20px;
+  cursor: pointer;
+  border-radius:10px !important;
+  }
+  img.btn-whatsapp:hover{
+  border-radius:10px !important;
+  -webkit-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1); 
+  -moz-box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+  box-shadow: 0px 0px 15px 0px rgba(7,94,84,1);
+  transition-duration: 1s;
+  } 
+
+/*      FIN Estilo Botón WhatsApp      */
+
+/*      FORMULARIO DE CONTACTO         */
+.forContacto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    min-height: 500px;
+
+}
+
+.forContacto>input {
+    outline: none;
+    border: none;
+    height: 32px;
+    padding: 0px 5px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #000000;
+    font-family: 'Lato', sans-serif;
+}
+
+.forContacto>textarea {
+    height: 100px;
+    resize: none;
+    outline: none;
+    border: none;
+    padding: 5px 5px;
+    text-transform: uppercase;
+    border-bottom: 3px solid #5f127c;
+    font-family: 'Lato', sans-serif;
+}
+
+.forContacto>button {
+    background-color: #dd5599;
+    border: none;
+    padding: 5px;
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.forContacto>button:active {
+    transform: scale(1.02);
+}
+
+/*      FIN Formulario de contacto         */
