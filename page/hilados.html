@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Hilados</title> 
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <link rel="stylesheet" href="../css/style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -13,27 +14,38 @@
 </head>
 <body  class="grid-container">          
  
-    <!-- Header -->
-    <header class="header">
-      <a href="../index.html"  class='anchor-logo'>
-      <img class="logo" src="../img/logo.jpg">
-      </a>
-  </header>
+    <!-- Navbar -->
+    <nav class="navbar1">
 
-  <!-- Navbar -->
-  <nav class="navbar">
-      <ul>
-          <li><a href="../index.html" class="item_navegacion">Inicio</a></li>
-          <li><a href="./hilados.html" class="item_navegacion">Hilados</a></li>
-          <li><a href="./novedades.html" class="item_navegacion">Novedades</a></li>
-          <li><a href="./cursos.html" class="item_navegacion">Cursos</a></li>
-          <li><a href="./contacto.html" class="item_navegacion">Contacto</a></li>
-      </ul>
-  </nav>
+      <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+          <div class="container-fluid">
+              <a href="../index.html" class='anchor-logo'>
+                  <img class="logo" src="../img/logo.jpg">
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+                <a class="nav-link active text-light" aria-current="page" href="../page/hilados.html">Hilados</a>
+                <a class="nav-link active text-light" aria-current="page" href="../page/novedades.html">Novedades</a>
+                <a class="nav-link active text-light" aria-current="page" href="../page/cursos.html">Cursos</a>
+                <a class="nav-link active text-light" aria-current="page" href="../page/contacto.html">Contacto   </a>
+              </div>
+            </div>
+          </div>
+        </nav>
+    </nav>
 
     <!-- Main -->
     <main  class="main">
       <section class="contenidoArticulos">
+
+        <h6>Nuestros hilados y nuestra confianza por tener muy buena mercadería esta enfocada 
+          en la afamada marca L.H.O. Otranto, y en algunas oportunidades mechamos con algunos 
+          hilados tanto de verano como de invierno importados de Barcelona, Turquía y Brasil.- </h5>
+          
           <div class="flip-container">
               <div class="card">
                 <div class="frente">
@@ -148,5 +160,6 @@
     <footer class="footer">
       Mauricio Roteta - Copyright 2022
   </footer>
+  <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

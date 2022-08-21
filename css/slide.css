@@ -1,4 +1,5 @@
 .slide {
+  grid-area: slide;
   position: relative;
   margin-top: 26px;
 }
@@ -73,17 +74,6 @@ h3 {
   display: block;
 }
 
-.slide-indicador {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  position: absolute;
-  bottom: 2%;
-  left: 0;
-  right: 0;
-  text-align: center;
-  z-index: 10;
-}
 
 .slide-indicador li {
   display: inline-block;

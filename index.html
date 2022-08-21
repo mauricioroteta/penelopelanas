@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Penelope Lanas</title>
-    <link rel="stylesheet" href="./css/slide.css">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,71 +15,57 @@
 
 <body class="grid-container">
 
-    <!-- Header -->
-    <header class="header">
-        <!-- Logo -->
-        <a href="./index.html" class='anchor-logo'>
-            <img class="logo" src="./img/logo.jpg">
-        </a>
-    </header>
-
     <!-- Navbar -->
-    <nav class="navbar">
-        <ul>
-            <li><a href="./index.html" class="item_navegacion">Inicio</a></li>
-            <li><a href="./page/hilados.html" class="item_navegacion">Hilados</a></li>
-            <li><a href="./page/novedades.html" class="item_navegacion">Novedades</a></li>
-            <li><a href="./page/cursos.html" class="item_navegacion">Cursos</a></li>
-            <li><a href="./page/contacto.html" class="item_navegacion">Contacto</a></li>
-        </ul>
+    <nav class="navbar1">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+            <div class="container-fluid">
+                <a href="./index.html" class='anchor-logo'>
+                    <img class="logo" src="./img/logo.jpg">
+                </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active text-light" aria-current="page" href="./index.html">Inicio</a>
+                  <a class="nav-link active text-light" aria-current="page" href="./page/hilados.html">Hilados</a>
+                  <a class="nav-link active text-light" aria-current="page" href="./page/novedades.html">Novedades</a>
+                  <a class="nav-link active text-light" aria-current="page" href="./page/cursos.html">Cursos</a>
+                  <a class="nav-link active text-light" aria-current="page" href="./page/contacto.html">Contacto   </a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </nav>
 
+    <!-- Slide-->
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./img/slide01.jpg" class="rounded mx-auto d-block w-50" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slide02.jpg" class="rounded mx-auto d-block w-50" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./img/slide03.jpg" class="rounded mx-auto d-block w-50" alt="...">
+            </div>
+        </div>
+
+    </div>
+                
     <!-- Main -->
     <main class="main">
         <section class="contenido">
 
-            <!-- Slide-->
-            <div class="slide">
-                <div class="slide-inner">
-                    <input class="slide-open" type="radio" id="slide-1" name="slide" aria-hidden="true" hidden=""
-                        checked="checked">
-                    <div class="slide-item">
-                        <img src="./img/slide01.jpg">
-                    </div>
-                    <input class="slide-open" type="radio" id="slide-2" name="slide" aria-hidden="true" hidden="">
-                    <div class="slide-item">
-                        <img src="./img/slide02.jpg">
-                    </div>
-                    <input class="slide-open" type="radio" id="slide-3" name="slide" aria-hidden="true" hidden="">
-                    <div class="slide-item">
-                        <img src="./img/slide03.jpg">
-                    </div>
-                    <label for="slide-3" class="slide-control prev control-1">‹</label>
-                    <label for="slide-2" class="slide-control next control-1">›</label>
-                    <label for="slide-1" class="slide-control prev control-2">‹</label>
-                    <label for="slide-3" class="slide-control next control-2">›</label>
-                    <label for="slide-2" class="slide-control prev control-3">‹</label>
-                    <label for="slide-1" class="slide-control next control-3">›</label>
-                    <ol class="slide-indicador">
-                        <li>
-                            <label for="slide-1" class="slide-circulo">•</label>
-                        </li>
-                        <li>
-                            <label for="slide-2" class="slide-circulo">•</label>
-                        </li>
-                        <li>
-                            <label for="slide-3" class="slide-circulo">•</label>
-                        </li>
-                    </ol>
-                </div>
-            </div>
-
             <div class="Nosotros">
                 <article>
+                    <br>
                     <header>
-                        <h3>Historia</h3>
+                        <h4>Historia</h3>
                     </header>
-                    <h5>Hace 18 años y con la ilusión de aportar a la economía familiar, emprendimos este sueño de
+                    <h6>Hace 18 años y con la ilusión de aportar a la economía familiar, emprendimos este sueño de
                         comercializar lanas, hilos, accesorios para las tejedoras de la ciudad y la zona. Junto a este
                         slogan “Pioneras en el Arte de Enseñar a Tejer” con la Escuela de Tejidos.-
                         El domicilio original fue en calle 9 de Julio al 200, pero cuando la Pandemia nos tuvimos que
@@ -92,6 +78,7 @@
 
             <div class="video">
                 <div>
+                    <br>
                     <article>
                         <iframe width="380px" height="250px" src="https://www.youtube.com/embed/75LPoh1zP48"
                             title="Muy pronto" frameborder="0"
@@ -109,5 +96,6 @@
     <footer class="footer">
         Mauricio Roteta - Copyright 2022 -
     </footer>
+    <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
