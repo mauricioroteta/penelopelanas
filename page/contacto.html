@@ -20,7 +20,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
             <div class="container-fluid">
                 <a href="../index.html" class='anchor-logo'>
-                    <img class="logo" src="../img/logo.jpg">
+                    <img class="logo" src="../img/logo.png">
                 </a>
               <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -42,31 +42,28 @@
     <main class="main">
         <section class="contenido">
             <div class="contact_form">
-                <form action="" method="post">
-                    <div class="forContacto">
-                        <h2>
-                            Contactame
-                        </h2>
-                        <label>
-                            Nombre
-                        </label>
-                        <input type="text" name='nombre'>
-                        <label>
-                            EMail
-                        </label>
-                        <input type="email" name='email'>
-                        <label>
-                            Telefono
-                        </label>
-                        <input type="tel" name='telefono'>
-                        <label class="nombre">
-                            Consulta
-                        </label>
-                        <textarea name="mensaje"></textarea>
-                        <button type="submit">ENVIAR</button>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Nombre</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Nombre">
                     </div>
-                </form>
+                    <div class="form-group">
+                        <label for="Email">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Teléfono</label>
+                        <input type="text" class="form-control" id="nombre" placeholder="Telefono">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPassword1">Consulta</label>
+                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Consulta"></textarea>
+                    </div>
+                    <br>
+                    <button type="submit" class="btn btn-primary">Enviar</button>
 
+                </form>
+                <br>
                 <div class="social">
                     <a href=https://www.facebook.com/search/top?q=penelope%20lanas><img src="../img/facebook.png" alt="facebook"></a>
                     <a href=https://www.instagram.com/penelopelanas3a/?hl=es><img src="../img/instagram.png" alt="instagram"></a>
