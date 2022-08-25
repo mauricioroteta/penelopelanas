@@ -307,7 +307,7 @@ card p {
   backface-visibility: hidden;
   align-items: center;
   justify-content: center;
-  font-size: 2rem;
+  font-size: 1rem;
 }
 
 .frente {
@@ -325,7 +325,7 @@ card p {
 }
 
 .dorso p {
-  font-size: 0.65em;
+  font-size: 0.75em;
 }
 
 .dorso button {
