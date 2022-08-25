@@ -13,34 +13,34 @@
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
 </head>
 
-<body class="grid-container">
+<body>
+    <header class="header-contenedor">
+        <nav class="navbar1">
 
-    <!-- Navbar -->
-    <nav class="navbar1">
-
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-            <div class="container-fluid">
-                <a href="./index.html" class='anchor-logo'>
-                    <img class="logo" src="./img/logo.png">
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active text-light" aria-current="page" href="./index.html">Inicio</a>
-                  <a class="nav-link active text-light" aria-current="page" href="./page/hilados.html">Hilados</a>
-                  <a class="nav-link active text-light" aria-current="page" href="./page/novedades.html">Novedades</a>
-                  <a class="nav-link active text-light" aria-current="page" href="./page/cursos.html">Cursos</a>
-                  <a class="nav-link active text-light" aria-current="page" href="./page/contacto.html">Contacto   </a>
+            <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+                <div class="container-fluid">
+                    <a href="./index.html" class='anchor-logo'>
+                        <img class="logo" src="./img/logo.png">
+                    </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                      <a class="nav-link active text-light" aria-current="page" href="./index.html">Inicio</a>
+                      <a class="nav-link active text-light" aria-current="page" href="./page/hilados.html">Hilados</a>
+                      <a class="nav-link active text-light" aria-current="page" href="./page/novedades.html">Novedades</a>
+                      <a class="nav-link active text-light" aria-current="page" href="./page/cursos.html">Cursos</a>
+                      <a class="nav-link active text-light" aria-current="page" href="./page/contacto.html">Contacto   </a>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-          </nav>
-    </nav>
+              </nav>
+        </nav>
+    </header>
 
     <!-- Slide-->
-    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide p-2" data-bs-ride="carousel">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./img/slide01.jpg" class="rounded mx-auto d-block w-50" alt="...">
@@ -54,42 +54,28 @@
         </div>
 
     </div>
-                
-    <!-- Main -->
-    <main class="main">
-        <section class="contenido">
 
-            <div class="Nosotros">
-                <article>
-                    <br>
-                    <header>
-                        <h4>Historia</h3>
-                    </header>
-                    <h6>Hace 18 años y con la ilusión de aportar a la economía familiar, emprendimos este sueño de
+    <main class="container-fluid">
+        <div class="row">
+            <div class="col p-5">
+                Hace 18 años y con la ilusión de aportar a la economía familiar, emprendimos este sueño de
                         comercializar lanas, hilos, accesorios para las tejedoras de la ciudad y la zona. Junto a este
                         slogan “Pioneras en el Arte de Enseñar a Tejer” con la Escuela de Tejidos.-
                         El domicilio original fue en calle 9 de Julio al 200, pero cuando la Pandemia nos tuvimos que
                         replantear, como muchos comerciantes, y nosotros que tenemos como clientas a emprendedoras que
                         comercializan sus prendas como hacer para abaratar costos y la acertada decisión fue llevar el
                         negocio a mi domicilio Castelli 876, y esa medida permitió tener mejores precios y que nuestras
-                        clientas nos pudieran seguir comprando.- </p>
-                </article>
+                        clientas nos pudieran seguir comprando.- 
             </div>
-
-            <div class="video">
-                <div>
-                    <br>
-                    <article>
-                        <iframe width="380px" height="250px" src="https://www.youtube.com/embed/75LPoh1zP48"
+            <div class="col p-5 text-center">
+                <iframe width="380px" height="250px" src="https://www.youtube.com/embed/75LPoh1zP48"
                             title="Muy pronto" frameborder="0"
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
-                    </article>
-                </div>
             </div>
-        </section>
+        </div>
     </main>
-
+    
     <img class="btn-whatsapp" src="./img/whatsapp.webp" width="64" height="64" alt="Whatsapp" onclick="window.location.href='https://wa.me/542983507502?text=Hola!%20Estoy%20interesado%20en%20tus%20servicios'">
 
     <!-- Footer -->
