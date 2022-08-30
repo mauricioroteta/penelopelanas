@@ -24,17 +24,6 @@ body {
   background-color: rgb(226, 200, 221);
 }
 
-/* Contenedor Principal */
-.grid-container {
-  max-width: 1400px;
-  width: 90%;
-  margin: auto;
-  border-radius: 4px;
-  text-align: left;
-  margin-bottom: 25px;
-  margin-top: 25px;
-}
-
 /* Logo */
 .anchor-logo{
   display: inline-block;
@@ -49,7 +38,6 @@ body {
   align-items: center;
   position: relative;
   border-radius: 15px;
-
 }
 
 .logo {
@@ -116,9 +104,6 @@ body {
       display: none !important;
     }}
 
-.navbar {
-  border-radius: 15px 15px 0px 0px;
-}
 
 /*     Barra de navegacion       */
 .navbar1 {
@@ -138,69 +123,6 @@ body {
   transform: scale(1.08);
 }
 /*     FIN Barra de navegacion       */
-
-.main {
-  grid-area: main;
-  font-family: 'Heebo', sans-serif;
-  gap: 10px;
-}
-
-.footer {
-  grid-area: footer;
-}
-
-.carousel {
-  grid-area: slide;
-}
-
-.grid-container {
-  display: grid;
-  gap: 10px;
-  grid-template:
-    "navbar1" 
-    "slide"
-    "main" 
-    "footer";
-}
-
-/* Estilo del Contenido */
-.contenido {
-  display: grid;
-  font-family: 'Heebo', sans-serif;
-  gap: 10px;
-  grid-template:
-    "slide"
-    "Nosotros"
-    "video";
-  text-align: center;
-}
-
-.nosotros {
-  grid-area: nosotros;
-}
-
-/*.video {
-  grid-area: video;
-  text-align: center;
-} */
-
-/* Start: Video Responsive */
-.video {
-  grid-area: video;
-  text-align: center;
-  overflow:hidden;
-  padding-bottom:200px; /* Adecua este valor para controlar la altura del video */
-  height:0;
-  position:relative;
-}
-.video iframe{
-  left:0;
-  top:0;
-  height:90%;
-  width:90%;
-  position:relative;
-}
-/* End: Video Responsive */
 
 /*      Grid contenido index      */
 .contenido {
@@ -246,23 +168,6 @@ body {
   display: flex;
   margin: 20px 20px;
   height: 35rem;
-}
-
-/* ID - No se usan para estilos*/
-.footer {
-  font-size: 16px;
-  letter-spacing: 3.4px;
-  word-spacing: 6px;
-  color: #000000;
-  font-weight: 700;
-  text-decoration: none;
-  font-style: normal;
-  font-variant: normal;
-  text-transform: none;
-  text-align: center;
-  background-color: #6c757d;
-  border-radius: 5px;
-  margin-bottom: 10px;
 }
 
 /* ------------------ TARJETAS GIRATORIAS ------------------ */
@@ -328,16 +233,6 @@ card p {
   font-size: 0.75em;
 }
 
-.dorso button {
-  display: block;
-  width: 60%;
-  margin: 2rem auto 0;
-  border: 2px solid #fff;
-  background: transparent;
-  padding: 1em;
-  text-transform: uppercase;
-}
-
 .dorso button:hover {
   color: #ffffff;
   border-color: #ffffff;
@@ -367,51 +262,48 @@ img.btn-whatsapp {
 
 /*      FIN Estilo Botón WhatsApp      */
 
-/*      FORMULARIO DE CONTACTO         */
-.forContacto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    min-height: 500px;
-
-}
-
-.forContacto>input {
-    outline: none;
-    border: none;
-    height: 32px;
-    padding: 0px 5px;
-    text-transform: uppercase;
-    border-bottom: 3px solid #000000;
-    font-family: 'Lato', sans-serif;
-}
-
-.forContacto>textarea {
-    height: 100px;
-    resize: none;
-    outline: none;
-    border: none;
-    padding: 5px 5px;
-    text-transform: uppercase;
-    border-bottom: 3px solid #5f127c;
-    font-family: 'Lato', sans-serif;
-}
-
-.forContacto>button {
-    background-color: #dd5599;
-    border: none;
-    padding: 5px;
-    font-weight: bold;
-    color: #ffffff;
-    cursor: pointer;
-}
-
-.forContacto>button:active {
-    transform: scale(1.02);
-}
-
-/*      FIN Formulario de contacto         */
-
 .Ubicacion {
   align-items: center;
+}
+
+.footer {
+  display: block;
+  font-size: 16px;
+  letter-spacing: 3.4px;
+  word-spacing: 6px;
+  font-weight: 700;
+  text-decoration: none;
+  font-style: normal;
+  font-variant: normal;
+  text-transform: none;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height:50px;
+  color:white;
+  text-align:center;
+  bottom:0;
+  left:0;
+  width:100%;
+  background-color: #6c757d;
+  position: fixed;
+  padding: 3px 0 5px;
+  height: 100%;
+  margin: 0;
+}
+
+.wrapper {
+  min-height: 72%;
+}
+.footer{
+  height: 50px;
+  opacity: 0.4;
+}
+
+h3 {
+  color: #ffffff;
+  background-color: #6c757d;
+}
+
+.col {
+  font-size: 1em;
 }

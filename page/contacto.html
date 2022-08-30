@@ -12,36 +12,36 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
 </head>
-<body  class="grid-container">          
- 
-     <!-- Navbar -->
-     <nav class="navbar1">
+<body>
 
-        <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
-            <div class="container-fluid">
-                <a href="../index.html" class='anchor-logo'>
-                    <img class="logo" src="../img/logo.png">
-                </a>
-              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-              </button>
-              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-                <div class="navbar-nav">
-                  <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
-                  <a class="nav-link active text-light" aria-current="page" href="../page/hilados.html">Hilados</a>
-                  <a class="nav-link active text-light" aria-current="page" href="../page/novedades.html">Novedades</a>
-                  <a class="nav-link active text-light" aria-current="page" href="../page/cursos.html">Cursos</a>
-                  <a class="nav-link active text-light" aria-current="page" href="../page/contacto.html">Contacto   </a>
+    <header class="header-contenedor">
+      <nav class="navbar1">
+    
+          <nav class="navbar navbar-expand-lg navbar-light bg-secondary">
+              <div class="container-fluid">
+                  <a href="../index.html" class='anchor-logo'>
+                      <img class="logo" src="../img/logo.png">
+                  </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-link active text-light" aria-current="page" href="../index.html">Inicio</a>
+                    <a class="nav-link active text-light" aria-current="page" href="../page/hilados.html">Hilados</a>
+                    <a class="nav-link active text-light" aria-current="page" href="../page/novedades.html">Novedades</a>
+                    <a class="nav-link active text-light" aria-current="page" href="../page/cursos.html">Cursos</a>
+                    <a class="nav-link active text-light" aria-current="page" href="../page/contacto.html">Contacto   </a>
+                  </div>
                 </div>
               </div>
-            </div>
-          </nav>
+            </nav>
       </nav>
+    </header>
 
-    <!-- Main -->
-    <main class="main">
-        <section class="contenido">
-            <div class="contact_form">
+    <main class="container-fluid wrapper">
+        <div class="row">
+            <div class="col  p-5 text-center">
                 <form>
                     <div class="form-group">
                         <label for="exampleInputPassword1">Nombre</label>
@@ -61,29 +61,21 @@
                     </div>
                     <br>
                     <button type="submit" class="btn btn-primary">Enviar</button>
-
                 </form>
+            </div>
+            <div class="col  p-5 text-center">
                 <br>
-                <div class="social">
+                <iframe width="380px" height="250px" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d781.8160466517515!2d-60.27479397314219!3d-38.38914019227299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1659408887895!5m2!1ses-419!2sar" width="400" height="400" style="border: 1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col p-2 text-center">
                     <a href=https://www.facebook.com/search/top?q=penelope%20lanas><img src="../img/facebook.png" alt="facebook"></a>
                     <a href=https://www.instagram.com/penelopelanas3a/?hl=es><img src="../img/instagram.png" alt="instagram"></a>
-                </div>
-
             </div>
-
-            <div class="Ubicacion">
-                <div>
-                    <article>
-                        <header>
-                            <h2>Donde Estamos</h2>
-                        </header>
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d781.8160466517515!2d-60.27479397314219!3d-38.38914019227299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2sar!4v1659408887895!5m2!1ses-419!2sar" width="400" height="400" style="border: 1;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="mapa"></iframe>
-                    </article>
-                </div>
-            </div>                 
-        </section>
-
-    </main>
+        </div>
+        <br>
+    </main>  
 
     <img class="btn-whatsapp" src="../img/whatsapp.webp" width="64" height="64" alt="Whatsapp" onclick="window.location.href='https://wa.me/542983507502?text=Hola!%20Estoy%20interesado%20en%20tus%20servicios'">
 
