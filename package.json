@@ -1,0 +1,25 @@
+{
+  "name": "penelopelanas",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass --watch scss/estilo.scss css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mauricioroteta/penelopelanas.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/mauricioroteta/penelopelanas/issues"
+  },
+  "homepage": "https://github.com/mauricioroteta/penelopelanas#readme",
+  "dependencies": {
+    "node-sass": "^7.0.1",
+    "sass": "^1.54.8"
+  },
+  "description": ""
+}

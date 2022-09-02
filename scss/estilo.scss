@@ -1,0 +1,100 @@
+@import 'fonts';
+@import 'colores';
+
+* {
+    font-family: $fontFamily;
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+  }
+  
+  html {
+    height: 100%;
+  }
+
+  h6 {
+    font-weight: normal;
+    text-align: left;
+  }
+  
+  body {
+    font-size: $fontSizeNormal;
+    min-height: 100%;
+    background-color: $colorFondo;
+  }
+  
+
+@import 'header';
+   
+  /* Estilo del header */
+  .item {
+    display: flex;
+    margin: 20px 20px;
+    height: 35rem;
+  }
+  
+@import 'tarjetas';
+  
+@import 'btnWhatsApp';
+  
+  .Ubicacion {
+    align-items: center;
+  }
+  
+  .footer {
+    display: block;
+    font-size: $footerFontSize;
+    letter-spacing: 3.4px;
+    word-spacing: 6px;
+    text-decoration: none;
+    font-style: normal;
+    font-variant: normal;
+    text-transform: none;
+    text-align: center;
+    margin-bottom: 10px;
+    line-height:50px;
+    color:$footerFontColor;
+    bottom:0;
+    left:0;
+    width:100%;
+    background-color: $gris;
+    position: fixed;
+    padding: 3px 0 5px;
+    margin: 0;
+    height: 50px;
+    opacity: 0.4;
+  }
+  
+  .wrapper {
+    min-height: 72%;
+  }
+  
+
+  /* Mixin para manejar Responsive */
+  @mixin movil( $medida:480px) {
+    @media screen and (max-width: $medida){
+        @content;
+    }
+  }
+
+  .contenido {
+    grid-template:
+    "nosotros"
+    "video";
+    font-size: small;
+    @include movil(768px){
+        grid-template:
+        "nosotros"  "video";
+        font-size: large;
+    }
+    @include movil(580) {
+        grid-template:
+            "nosotros"
+            "video";
+        font-size: large;
+    }
+}
+
+.row {
+  padding: 20px;
+}
