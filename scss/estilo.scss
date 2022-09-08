@@ -1,6 +1,7 @@
 @import 'fonts';
 @import 'colores';
 
+
 * {
     font-family: $fontFamily;
     box-sizing: border-box;
@@ -96,5 +97,18 @@
 }
 
 .row {
-  padding: 20px;
+  padding: 15px; 
 }
+
+.textoGaleria {
+  text-align: center;
+  font-weight: bold;
+  color: $colorBlanco;
+  background-color: $colorTituloTarjeta;
+  font-size: larger;
+}
+
+.imagenGaleria:hover {
+  opacity: 0.8;
+  cursor: pointer;
+} 
