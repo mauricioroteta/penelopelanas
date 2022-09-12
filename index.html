@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap" rel="stylesheet">
     <link rel="icon" type="image/png" href="./accets/img/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 
 <body>
@@ -44,7 +45,7 @@
     </header>
 
     <!-- Slide-->
-    <div id="carouselExampleIndicators" class="carousel slide p-2" data-bs-ride="carousel">
+    <div id="carouselExampleIndicators" class="carousel slide p-2" data-bs-ride="carousel"  data-aos="fade-right" data-aos-delay="800">
         <div class="carousel-inner">
             <div class="carousel-item active">
                 <img src="./accets/img/slide01.jpg" class="rounded mx-auto d-block w-50" alt="imagenes de ovillos de lana en slide 01">
@@ -56,12 +57,11 @@
                 <img src="./accets/img/slide03.jpg" class="rounded mx-auto d-block w-50" alt="imagenes de ovillos de lana en slide 03">
             </div>
         </div>
-
     </div>
 
     <main class="container-fluid">
         <div class="container pb-5">
-            <section class="quienes-1">
+            <section class="quienes-1" data-aos="zoom-in" data-aos-delay="800">
                 <div class="row pt-4 pb-sm-4">
                     <div class="col-12 col-sm-7 col-md-6 text-center text-sm-left pt-xl-3 pl-xl-5">
                         <div class="interna-titulo pl-4 textoGaleria">Quiénes somos</div>
@@ -80,10 +80,10 @@
                     </div>
                 </div>
             </section>
-            <section class="quienes-2">
+            <section class="quienes-2" data-aos="fade-down" data-aos-delay="800">
                 <img src="./accets/img/foto-quienes-somos-2.jpg" alt="Quiénes somos" class="w-100 img-fluid">
             </section>
-            <section class="quienes-3">
+            <section class="quienes-3" data-aos="zoom-in" data-aos-delay="800">
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-sm-6 px-0 pr-lg-5">
@@ -97,7 +97,7 @@
                     </div>
                 </div>
             </section>
-            <section class="quienes-4">
+            <section class="quienes-4" data-aos="fade-down" data-aos-delay="800">
                 <div class="container-fluid">
                     <div class="row align-items-center">
                         <div class="col-sm-6 px-0 order-sm-2">
@@ -111,7 +111,7 @@
                     </div>
                 </div>
             </section>
-            <section class="quienes-5 pb-sm-5">
+            <section class="quienes-5 pb-sm-5" data-aos="zoom-in" data-aos-delay="800">
                 <div class="row">
                     <div class="col-12 text-center py-5 mb-5">
                         <p class="mt-3 mb-0">Es un placer recibirlas en nuestro comercio, asesorarlas y que sean parte de la misma.... clientas-amigas, de Uds. aprendemos día a día.- </p>
@@ -129,5 +129,9 @@
         Mauricio Roteta - Copyright 2022
     </footer>
     <script src="./accets/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+     <script>
+     AOS.init();
+     </script>
 </body>
 </html>
