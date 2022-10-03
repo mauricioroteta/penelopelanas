@@ -1,0 +1,13 @@
+#redirección permanente de dominio www a sin www
+RewriteEngine on
+Options +FollowSymLinks
+RewriteCond %{HTTP_HOST} ^www\.midominio\.com$ [NC]
+RewriteRule ^(.*)$ http://midominio.com/$1 [R=301,L]
+
+#Cache de imágenes en el navegador durante un mes
+<FilesMatch "\.(ico|jpg|jpeg|png|gif)$">
+Header set Cache-Control "max-age=2592000, public"
+</FilesMatch>
+
+#Carga tu propia página de error 404
+ErrorDocument 404 /page/404.html
