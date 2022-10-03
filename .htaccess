@@ -1,8 +1,8 @@
 #redirección permanente de dominio www a sin www
 RewriteEngine on
 Options +FollowSymLinks
-RewriteCond %{HTTP_HOST} ^www\.midominio\.com$ [NC]
-RewriteRule ^(.*)$ http://midominio.com/$1 [R=301,L]
+RewriteCond %{HTTP_HOST} ^www\.penelopelanas.000webhostapp.com\.com$ [NC]
+RewriteRule ^(.*)$ https://penelopelanas.000webhostapp.com/$1 [R=301,L]
 
 #Cache de imágenes en el navegador durante un mes
 <FilesMatch "\.(ico|jpg|jpeg|png|gif)$">
